@@ -13,9 +13,9 @@ def load_database():
 
 st.session_state['df'] = load_database()
 
-st.session_state['dimensao'] = ['ocorrencia_classificacao', 'ocorrencia_tipo', 'ocorrencia_cidade', 'ocorrencia_uf', 'aeronave_equipamento', 'aeronave_fabricante', 'aeronave_modelo', 'aeronave_quantidade_motores', 'aeronave_segmento_aviacao', 'aeronave_nivel_dano', 'quantidade_fatalidades']
+st.session_state['dimensao'] = ['ocorrencia_classificacao', 'ocorrencia_tipo', 'ocorrencia_cidade', 'ocorrencia_uf', 'aeronave_equipamento', 'aeronave_fabricante', 'aeronave_modelo', 'aeronave_quantidade_motores', 'aeronave_segmento_aviacao', 'aeronave_nivel_dano']
 st.session_state['dimensao_tempo'] = ['ocorrencia_ano', 'ocorrencia_mes', 'aeronave_ano_fabricacao']
-st.session_state['medida'] = ['aeronave_peso_maximo_decolagem', 'aeronave_valor']
+st.session_state['medida'] = ['aeronave_peso_maximo_decolagem', 'aeronave_valor', 'quantidade_fatalidades']
 st.session_state['agregador'] = ['sum', 'mean', 'count', 'min', 'max']
 
 st.title('Gestão de Conhecimento')
